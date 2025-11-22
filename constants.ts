@@ -26,7 +26,9 @@ import {
   Monitor,
   Lock,
   Megaphone,
-  Trophy
+  Trophy,
+  Gift,
+  CheckCircle2
 } from 'lucide-react';
 import { Feature, ProcessStep, Project, Testimonial, FaqItem, NavigationItem, PricingPlan, ComparisonPoint, TeamMember } from './types';
 
@@ -164,6 +166,7 @@ export const PRICING_PLANS: PricingPlan[] = [
     oldPrice: "2'200 €",
     description: "Tout le système (Site + Google + Réputation). Attention, vu la demande, ce tarif de lancement va bientôt augmenter.",
     features: [
+      "🚀 Livré en 7 jours (Clé en main)",
       "Site Web Pro (Création ou Refonte complète)",
       "Positionnement Google (Pour être vu)",
       "🛡️ Filtre Anti-Mauvais Avis (Protection)",
