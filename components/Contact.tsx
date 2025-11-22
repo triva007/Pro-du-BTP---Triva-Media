@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Button from './Button';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
@@ -34,7 +35,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-1">Appelez-nous</h3>
-                  <p className="text-brand-lightBlue">01 23 45 67 89</p>
+                  <p className="text-brand-lightBlue">+33 7 67 05 60 66</p>
                   <p className="text-sm text-white/50 mt-1">On parle le langage du chantier.</p>
                 </div>
               </div>
@@ -45,7 +46,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-1">Par email</h3>
-                  <p className="text-brand-lightBlue">projet@triva-media-btp.fr</p>
+                  <p className="text-brand-lightBlue">aaron@triva-media.com</p>
                   <p className="text-sm text-white/50 mt-1">Réponse rapide.</p>
                 </div>
               </div>

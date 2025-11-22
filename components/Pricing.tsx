@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { PRICING_PLANS } from '../constants';
 import { CheckCircle2, Zap, AlertCircle, TrendingUp } from 'lucide-react';
@@ -71,7 +72,7 @@ const Pricing: React.FC = () => {
 
               <Button 
                 variant="primary" 
-                className="w-full justify-center py-4 sm:py-5 text-lg sm:text-xl font-bold rounded-xl bg-brand-blue text-white hover:bg-blue-600 shadow-lg shadow-brand-blue/30 border-none group animate-pulse-slow"
+                className="w-full justify-center py-4 sm:py-5 text-lg sm:text-xl font-bold rounded-xl bg-white text-brand-dark hover:bg-slate-100 shadow-lg shadow-white/20 border-none group animate-pulse-slow"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 {plan.buttonText}

@@ -145,7 +145,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Artisan Menuisier",
     company: "MD Menuiserie",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "Je n'y connais rien en informatique et je m'en fous. Moi je veux juste que le téléphone sonne pour du boulot sérieux. C'est ce qu'ils ont fait. C'est carré."
+    quote: "Je n'y connais rien en informatique. Moi je veux juste que le téléphone sonne pour du boulot sérieux. C'est ce qu'ils ont fait. C'est carré."
   },
   {
     id: 2,
