@@ -145,7 +145,7 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Artisan Menuisier",
     company: "MD Menuiserie",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "Je n'y connais rien en informatique. Moi je veux juste que le téléphone sonne pour du boulot sérieux. C'est ce qu'ils ont fait. C'est carré."
+    quote: "Je n'y connais rien en informatique et je m'en fous. Moi je veux juste que le téléphone sonne pour du boulot sérieux. C'est ce qu'ils ont fait. C'est carré."
   },
   {
     id: 2,
@@ -164,13 +164,29 @@ export const PRICING_PLANS: PricingPlan[] = [
     oldPrice: "2'200 €",
     description: "Tout le système (Site + Google + Réputation). Attention, vu la demande, ce tarif de lancement va bientôt augmenter.",
     features: [
-      "Site Web Pro (Votre vitrine qui convertit)",
+      "Site Web Pro (Création ou Refonte complète)",
       "Positionnement Google (Pour être vu)",
       "🛡️ Filtre Anti-Mauvais Avis (Protection)",
       "Optimisation Fiche Google Maps",
       "Rédaction Commerciale (On vend votre expertise)",
-      "Hébergement & Sécurité (1 an offert)",
       "✅ 100% À VOUS (Propriétaire à vie)"
+    ],
+    bonuses: [
+      {
+        title: "Formation : Maîtriser Google",
+        description: "Tuto vidéo simple pour gérer votre fiche et poster vos photos comme un pro.",
+        value: "290 €"
+      },
+      {
+        title: "Hébergement & Maintenance",
+        description: "Tout est inclus la 1ère année : Serveur sécurisé + Mises à jour.",
+        value: "300 €"
+      },
+      {
+        title: "Pack 'Réponses aux Avis'",
+        description: "Des modèles de textes professionnels à copier-coller pour vos clients.",
+        value: "150 €"
+      }
     ],
     isPopular: true,
     buttonText: "Bloquer ce tarif maintenant",
@@ -205,6 +221,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Pourquoi seulement 990€ ?",
     answer: "Parce qu'on élimine les frais inutiles d'agence traditionnelle. Mais attention, pour maintenir cette qualité de service, le prix va augmenter prochainement pour les nouveaux clients. Profitez-en maintenant."
+  },
+  {
+    question: "J'ai déjà un site web, vous pouvez le refaire ?",
+    answer: "Oui, absolument. On garde votre nom de domaine (votre adresse sur le web) mais on reconstruit tout l'intérieur. On remplace votre vieux site par notre machine de guerre optimisée pour Google et la conversion."
   },
   {
     question: "J'ai pas le temps de gérer un site...",

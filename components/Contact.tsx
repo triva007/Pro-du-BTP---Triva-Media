@@ -94,7 +94,7 @@ const Contact: React.FC = () => {
                   id="message" 
                   rows={4} 
                   className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all focus:bg-white resize-none"
-                  placeholder="Je n'ai pas de site, ou je paie trop cher de leads..."
+                  placeholder="Je n'ai pas de site, ou je veux moderniser mon site actuel..."
                 ></textarea>
               </div>
 

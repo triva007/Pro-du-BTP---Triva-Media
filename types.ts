@@ -39,12 +39,19 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface Bonus {
+  title: string;
+  description: string;
+  value: string;
+}
+
 export interface PricingPlan {
   title: string;
   price: string;
   oldPrice?: string;
   description: string;
   features: string[];
+  bonuses?: Bonus[];
   isPopular?: boolean;
   buttonText: string;
   buttonVariant: 'primary' | 'secondary' | 'outline';

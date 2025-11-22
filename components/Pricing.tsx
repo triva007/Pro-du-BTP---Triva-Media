@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { PRICING_PLANS } from '../constants';
-import { CheckCircle2, Zap, AlertCircle, TrendingUp } from 'lucide-react';
+import { CheckCircle2, Zap, AlertCircle, TrendingUp, Gift } from 'lucide-react';
 import Button from './Button';
 
 const Pricing: React.FC = () => {
@@ -59,7 +59,8 @@ const Pricing: React.FC = () => {
                 </p>
               </div>
 
-              <div className="flex-grow space-y-4 sm:space-y-5 mb-8 sm:mb-10 bg-slate-800/50 p-5 sm:p-6 rounded-2xl border border-slate-700">
+              {/* Main Features */}
+              <div className="flex-grow space-y-4 sm:space-y-5 mb-8 bg-slate-800/50 p-5 sm:p-6 rounded-2xl border border-slate-700">
                 {plan.features.map((feature, fIndex) => (
                   <div key={fIndex} className="flex items-start gap-3">
                     <div className="bg-brand-blue/20 p-1 rounded-full shrink-0 mt-0.5">
@@ -69,6 +70,31 @@ const Pricing: React.FC = () => {
                   </div>
                 ))}
               </div>
+
+              {/* BONUS SECTION */}
+              {plan.bonuses && (
+                <div className="mb-8 bg-gradient-to-br from-brand-yellow/10 to-transparent p-5 sm:p-6 rounded-2xl border border-brand-yellow/30 relative overflow-hidden">
+                  <div className="flex items-center gap-2 mb-4 relative z-10">
+                     <Gift className="text-brand-yellow w-5 h-5" />
+                     <h4 className="text-brand-yellow font-black uppercase tracking-wide text-sm">Bonus Offerts (Durée Limitée)</h4>
+                  </div>
+                  
+                  <div className="space-y-4 relative z-10">
+                    {plan.bonuses.map((bonus, bIndex) => (
+                      <div key={bIndex} className="flex justify-between items-start gap-3 pb-3 border-b border-white/10 last:border-0 last:pb-0">
+                        <div className="text-left">
+                          <div className="text-white font-bold text-sm">{bonus.title}</div>
+                          <div className="text-slate-400 text-xs leading-tight mt-0.5">{bonus.description}</div>
+                        </div>
+                        <div className="text-right shrink-0">
+                          <div className="text-slate-500 line-through text-xs decoration-red-500/70 decoration-1">Valeur {bonus.value}</div>
+                          <div className="text-brand-yellow font-bold text-xs uppercase">Offert</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
 
               <Button 
                 variant="primary" 
