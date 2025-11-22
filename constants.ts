@@ -181,9 +181,9 @@ export const PRICING_PLANS: PricingPlan[] = [
         value: "290 €"
       },
       {
-        title: "Hébergement & Maintenance",
-        description: "Tout est inclus la 1ère année : Serveur sécurisé + Mises à jour.",
-        value: "300 €"
+        title: "Hébergement & Maintenance (3 mois offerts)",
+        description: "Serveur, mises à jour et technique offerts pour démarrer sereinement.",
+        value: "180 €"
       },
       {
         title: "Pack 'Réponses aux Avis'",
