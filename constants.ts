@@ -184,11 +184,6 @@ export const PRICING_PLANS: PricingPlan[] = [
         title: "Hébergement & Maintenance (3 mois offerts)",
         description: "Serveur, mises à jour et technique offerts pour démarrer sereinement.",
         value: "180 €"
-      },
-      {
-        title: "Pack 'Réponses aux Avis'",
-        description: "Des modèles de textes professionnels à copier-coller pour vos clients.",
-        value: "150 €"
       }
     ],
     isPopular: true,
