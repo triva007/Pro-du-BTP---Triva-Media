@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ArrowRight, Phone, Star, HardHat, CheckCircle2, Search, Clock } from 'lucide-react';
+import { ArrowRight, Phone, Star, HardHat, Search, Clock } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [showBadge, setShowBadge] = useState(true);
@@ -43,12 +43,7 @@ const Hero: React.FC = () => {
               </p>
               
               {/* NEW BADGES DESIGN */}
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
-                <div className="inline-flex items-center gap-2.5 bg-emerald-50 border border-emerald-100 text-emerald-800 px-5 py-2.5 rounded-full shadow-sm transition-transform hover:scale-105 cursor-default">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-600 fill-emerald-100" />
-                  <span className="font-bold text-sm sm:text-base tracking-tight">Rentabilisé en 1 chantier</span>
-                </div>
-                
+              <div className="flex justify-center lg:justify-start">
                 <div className="inline-flex items-center gap-2.5 bg-blue-50 border border-blue-100 text-brand-blue px-5 py-2.5 rounded-full shadow-sm transition-transform hover:scale-105 cursor-default">
                   <Clock className="w-5 h-5 text-brand-blue" />
                   <span className="font-bold text-sm sm:text-base tracking-tight">Livré clé en main sous 7 jours</span>
