@@ -44,10 +44,10 @@ export const NAV_ITEMS: NavigationItem[] = [
 
 // Stats orientées Business Réel
 export const STATS = [
-  { value: "100%", label: "Spécialisé BTP" },
-  { value: "7 Jours", label: "Délai de livraison" },
-  { value: "Illimité", label: "Modifications incluses" },
-  { value: "N°1", label: "Votre place visée" },
+  { value: "Liberté", label: "Engagement 3 mois seulement" },
+  { value: "France", label: "Une petite équipe française" },
+  { value: "24h", label: "Mise en place du projet" },
+  { value: "7 Jours", label: "Livraison clé en main" },
 ];
 
 // Problèmes basés sur la FIERTÉ et L'INJUSTICE
