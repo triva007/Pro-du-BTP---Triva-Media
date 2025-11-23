@@ -162,7 +162,7 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PRICING_PLANS: PricingPlan[] = [
   {
     title: "Pack Intégral : Domination Locale",
-    price: "990 €",
+    price: "1297 €",
     oldPrice: "2'200 €",
     description: "Tout le système (Site + Google + Réputation). Attention, vu la demande, ce tarif de lancement va bientôt augmenter.",
     features: [
