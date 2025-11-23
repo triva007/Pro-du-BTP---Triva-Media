@@ -28,7 +28,9 @@ import {
   Megaphone,
   Trophy,
   Gift,
-  CheckCircle2
+  CheckCircle2,
+  RefreshCw,
+  Infinity
 } from 'lucide-react';
 import { Feature, ProcessStep, Project, Testimonial, FaqItem, NavigationItem, PricingPlan, ComparisonPoint, TeamMember } from './types';
 
@@ -37,15 +39,15 @@ export const NAV_ITEMS: NavigationItem[] = [
   { label: 'Le Constat', href: '#problem' },
   { label: 'La Méthode', href: '#process' },
   { label: 'Réalisations', href: '#portfolio' },
-  { label: 'Offre Unique', href: '#pricing' },
+  { label: 'Tarifs', href: '#pricing' },
 ];
 
 // Stats orientées Business Réel
 export const STATS = [
-  { value: "100%", label: "Propriétaire du site" },
+  { value: "100%", label: "Spécialisé BTP" },
+  { value: "7 Jours", label: "Délai de livraison" },
+  { value: "Illimité", label: "Modifications incluses" },
   { value: "N°1", label: "Votre place visée" },
-  { value: "X3", label: "Demandes sérieuses" },
-  { value: "24h/7", label: "Votre vitrine bosse" },
 ];
 
 // Problèmes basés sur la FIERTÉ et L'INJUSTICE
@@ -73,46 +75,41 @@ export const PROBLEM_CARDS = [
 export const FEATURES: Feature[] = [
   {
     icon: MapPin,
-    title: "On vous place sur la Carte",
-    description: "Quand on cherche votre métier dans votre ville, c'est VOUS qui devez sortir en gros. Pas le voisin. On optimise tout pour que Google vous identifie comme le patron du secteur."
+    title: "Optimisation Google Maps (GMB)",
+    description: "On travaille votre fiche en profondeur (mots-clés, catégories). On envoie tous les bons signaux à Google pour maximiser vos chances d'apparaître comme la référence locale de votre secteur."
   },
   {
     icon: ShieldCheck,
-    title: "Le Filtre Anti-Mauvaise Foi",
-    description: "Le client est content ? Son avis va sur Google. Le client râle ? Son avis est bloqué et arrive direct dans votre boîte mail pour régler ça en privé. Votre note reste impeccable."
+    title: "Bouclier de Réputation (Filtre)",
+    description: "Notre système intercepte les avis. Les clients contents sont dirigés vers Google (5 étoiles). Les mécontents sont redirigés vers un formulaire privé. Votre e-réputation reste immaculée."
   },
   {
-    icon: PhoneCall,
-    title: "Une Vitrine qui inspire le Respect",
-    description: "Fini le site qui fait 'bricolage'. On vous fait une présentation carrée, propre, qui montre vos plus beaux chantiers. Le client doit se dire : 'Lui, c'est un sérieux'."
+    icon: Layout,
+    title: "Site Web conçu pour Convertir",
+    description: "On ne fait pas du 'joli', on fait du 'rassurant'. Design pro, photos de vos réalisations, boutons d'appel visibles. Le visiteur voit que vous êtes sérieux, il a confiance, il appelle."
   },
   {
-    icon: Monitor,
-    title: "C'est à VOUS (Pas de location)",
-    description: "Beaucoup d'agences vous 'louent' votre site. Si vous arrêtez de payer, ils coupent tout. Chez nous, vous payez la construction, et on vous donne les clés. C'est votre patrimoine."
-  },
-  {
-    icon: Zap,
-    title: "La Méthode 'Avis Faciles'",
-    description: "Plus vous avez d'avis, plus vous signez cher. On vous donne le système simple (un lien magique par SMS) pour que vos clients satisfaits vous notent en 10 secondes à la fin du chantier."
+    icon: RefreshCw,
+    title: "Tout Inclus & Illimité",
+    description: "Maintenance, sécurité, hébergement, modifications de photos ou textes... Tout est géré par nous. Vous avez un département web complet pour le prix d'un resto par mois."
   }
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "1",
-    title: "Mise au Propre",
-    description: "On récupère vos infos, vos photos de chantiers, et on construit une image digitale qui reflète la qualité de votre travail réel. On fait le ménage."
+    title: "Construction & Rassurance",
+    description: "On crée votre Site Web Pro et on optimise votre fiche GMB. L'objectif : que tout soit carré pour rassurer immédiatement le client qui tombe sur vous."
   },
   {
     number: "2",
-    title: "Prise de Terrain",
-    description: "On lance la machine. On force Google à comprendre que c'est vous la référence locale. Votre nom commence à remonter sur les recherches des clients."
+    title: "Activation du Bouclier",
+    description: "On met en place le système de filtrage d'avis. On commence à solliciter vos anciens clients pour faire grimper votre note Google sans risque."
   },
   {
     number: "3",
-    title: "Verrouillage",
-    description: "On installe le système de filtrage d'avis. Vous commencez à récolter des 5 étoiles. Votre réputation devient intouchable. Les concurrents ne peuvent plus suivre."
+    title: "Domination Locale",
+    description: "Votre site convertit, votre visibilité locale augmente progressivement, et votre note frôle les 5/5. Vous devenez le choix évident sur votre secteur."
   }
 ];
 
@@ -155,86 +152,99 @@ export const TESTIMONIALS: Testimonial[] = [
     role: "Façadier",
     company: "KB Ravalement",
     avatar: "https://randomuser.me/api/portraits/men/44.jpg",
-    quote: "Le truc du filtre d'avis, c'est du génie. J'avais un client qui voulait me descendre pour une histoire de délai, le système l'a bloqué. Ma note Google est restée à 5/5."
+    quote: "J'étais invisible sur Google, relégué en page 2. Ils ont repris ma fiche GMB en main et en 2 mois, je suis remonté dans le Top 3 local. Le téléphone a recommencé à sonner."
   }
 ];
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    title: "Pack Intégral : Domination Locale",
-    price: "1297 €",
-    oldPrice: "2'200 €",
-    description: "Tout le système (Site + Google + Réputation). Attention, vu la demande, ce tarif de lancement va bientôt augmenter.",
+    title: "Abonnement Intégral (VIP)",
+    price: "197 €",
+    period: "/ mois",
+    oldPrice: "247 €",
+    description: "L'offre PREMIUM tout-inclus. Ce tarif mensuel avantageux vous donne accès à notre service le plus complet : maintenance, modifications illimitées et support prioritaire.",
     features: [
-      "🚀 Livré en 7 jours (Clé en main)",
-      "Site Web Pro (Création ou Refonte complète)",
-      "Positionnement Google (Pour être vu)",
-      "🛡️ Filtre Anti-Mauvais Avis (Protection)",
-      "Optimisation Fiche Google Maps",
-      "Rédaction Commerciale (On vend votre expertise)",
-      "✅ 100% À VOUS (Propriétaire à vie)"
+      "🚀 Site Internet Pro (Livré en 7j)",
+      "✅ 0€ de Frais de mise en service",
+      "Positionnement Google & Fiche Maps",
+      "🛡️ Filtre Anti-Mauvais Avis inclus",
+      "Hébergement & Sécurité inclus",
+      "Modifications illimitées",
+      "Support prioritaire WhatsApp"
     ],
     bonuses: [
       {
-        title: "Formation : Maîtriser Google",
-        description: "Tuto vidéo simple pour gérer votre fiche et poster vos photos comme un pro.",
-        value: "290 €"
+        title: "Frais de Mise en Service OFFERTS",
+        description: "Valeur réelle du setup technique et design.",
+        value: "990 €"
       },
       {
-        title: "Hébergement & Maintenance (3 mois offerts)",
-        description: "Serveur, mises à jour et technique offerts pour démarrer sereinement.",
-        value: "180 €"
+        title: "Formation : Maîtriser Google",
+        description: "Tuto vidéo simple.",
+        value: "290 €"
       }
     ],
     isPopular: true,
-    buttonText: "Bloquer ce tarif maintenant",
+    buttonText: "Je profite de l'offre VIP",
     buttonVariant: "primary"
+  },
+  {
+    title: "Pack Propriétaire",
+    price: "2 490 €",
+    period: "Paiement unique",
+    description: "Site livré clé en main. Idéal si vous avez déjà un prestataire technique ou si vous voulez gérer seul.",
+    features: [
+      "🚀 Site Internet Pro (Livré en 7j)",
+      "✅ Propriétaire à 100% (Code source)",
+      "Positionnement Google & Fiche Maps",
+      "🛡️ Filtre Anti-Mauvais Avis inclus",
+      "⚠️ Hébergement & Maintenance NON inclus",
+      "⚠️ Option Maintenance VIP (+97€/mois)",
+      "Formation prise en main incluse"
+    ],
+    bonuses: [
+      {
+        title: "Formation : Gérer son site",
+        description: "1h de vidéo pour apprendre à modifier vos textes.",
+        value: "290 €"
+      },
+      {
+        title: "Optimisation Fiche GMB",
+        description: "Paramétrage complet pour le référencement local.",
+        value: "490 €"
+      }
+    ],
+    isPopular: false,
+    buttonText: "Choisir le Paiement Unique",
+    buttonVariant: "outline"
   }
 ];
 
 export const COMPARISON_DATA: ComparisonPoint[] = [
-  {
-    label: "Les Clients",
-    bad: "Partagés avec 3 autres pros",
-    good: "100% pour vous (Directs)"
-  },
-  {
-    label: "Image perçue",
-    bad: "Bricoleur du coin",
-    good: "Entreprise de Référence"
-  },
-  {
-    label: "En cas de litige",
-    bad: "Votre note Google chute",
-    good: "Le filtre vous protège"
-  },
-  {
-    label: "Ce que vous payez",
-    bad: "Un loyer à vie (Perte sèche)",
-    good: "Un investissement (Actif)"
-  }
+  // Données conservées pour compatibilité type, mais non utilisées dans la nouvelle version visuelle
+  { label: "", bad: "", good: "" } 
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "Pourquoi seulement 990€ ?",
-    answer: "Parce qu'on élimine les frais inutiles d'agence traditionnelle. Mais attention, pour maintenir cette qualité de service, le prix va augmenter prochainement pour les nouveaux clients. Profitez-en maintenant."
+    question: "Combien de chantiers pour rentabiliser le site ?",
+    answer: "Faites le calcul : à 197€/mois, souvent une seule petite intervention ou une demi-journée de chantier suffit à payer votre visibilité pour tout le mois. Tout le reste, c'est du bénéfice net pour votre entreprise."
   },
   {
-    question: "J'ai déjà un site web, vous pouvez le refaire ?",
-    answer: "Oui, absolument. On garde votre nom de domaine (votre adresse sur le web) mais on reconstruit tout l'intérieur. On remplace votre vieux site par notre machine de guerre optimisée pour Google et la conversion."
+    question: "Je veux du 'boulot sérieux', pas des bricoles. C'est possible ?",
+    answer: "Oui. Un site pro et des avis 5 étoiles rassurent les clients qui ont du budget. On filtre les 'chasseurs de prix' par l'image haut de gamme que l'on donne de votre entreprise. Vous attirez des clients qui cherchent la qualité avant tout."
   },
   {
-    question: "J'ai pas le temps de gérer un site...",
-    answer: "Ça tombe bien, on ne vous demande pas de le gérer. Une fois en place, ça tourne tout seul. C'est comme une bonne installation : une fois posée, on n'y touche plus, ça fonctionne."
+    question: "Combien de temps avant que mon téléphone sonne ?",
+    answer: "Votre site est livré en 7 jours. Dès qu'il est en ligne et que votre fiche Google est optimisée, vous commencez à remonter. Généralement, nos artisans voient les premiers appels qualifiés arriver dès les premières semaines."
   },
   {
-    question: "C'est quoi cette histoire de filtrage d'avis ?",
-    answer: "C'est votre sécurité. Avant de publier sur Google, on demande au client s'il est satisfait. Si OUI -> Google. Si NON -> Formulaire privé pour vous. Ça évite que les clients règlent leurs comptes en public."
+    question: "Est-ce un contrat bloquant sur 4 ans (Crédit-Bail) ?",
+    answer: "SURTOUT PAS ! C'est le piège classique. Chez nous, l'engagement n'est que de 3 mois. Si ça ne vous rapporte rien, vous arrêtez. Nous sommes obligés de vous apporter des résultats pour vous garder."
   },
   {
-    question: "Pourquoi le prix va augmenter ?",
-    answer: "Nous limitons le nombre d'artisans que nous accompagnons par secteur pour garantir des résultats. La demande explose, donc nos tarifs vont s'ajuster à la valeur réelle du marché (env. 2000€)."
+    question: "J'ai déjà un site mais il ne rapporte rien...",
+    answer: "Avoir un site ne suffit pas, il faut qu'il soit visible. C'est la différence entre une boutique dans une impasse et une boutique sur les Champs-Élysées. Nous transformons votre site 'vitrine vide' en apporteur d'affaires actif grâce au référencement local."
   }
 ];
 

@@ -48,6 +48,7 @@ export interface Bonus {
 export interface PricingPlan {
   title: string;
   price: string;
+  period: string;
   oldPrice?: string;
   description: string;
   features: string[];

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { FEATURES } from '../constants';
 import { MapPin, Star, ThumbsUp, ThumbsDown, ArrowRight, ShieldCheck } from 'lucide-react';
@@ -79,24 +80,13 @@ const Benefits: React.FC = () => {
             <p className="text-slate-600 text-sm">{FEATURES[2].description}</p>
           </div>
 
-          {/* Feature 4 - Appels */}
+          {/* Feature 4 - Appels (Now using Tout Inclus description) */}
           <div className="reveal md:col-span-1 bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-sm hover:shadow-md transition-all min-h-[200px]">
             <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mb-4 text-brand-dark">
                {React.createElement(FEATURES[3].icon, { size: 24 })}
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-2">{FEATURES[3].title}</h3>
             <p className="text-slate-500 text-sm">{FEATURES[3].description}</p>
-          </div>
-
-           {/* Feature 5 - Wide (Tout inclus) */}
-          <div className="reveal md:col-span-3 lg:col-span-2 bg-white rounded-3xl p-6 sm:p-8 border border-slate-100 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-6 hover:border-brand-blue/30 transition-colors">
-             <div className="flex-shrink-0 w-16 h-16 bg-brand-yellow/10 rounded-full flex items-center justify-center text-brand-yellow">
-                {React.createElement(FEATURES[4].icon, { size: 32 })}
-             </div>
-             <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-1">{FEATURES[4].title}</h3>
-                <p className="text-slate-500 text-sm">{FEATURES[4].description}</p>
-             </div>
           </div>
 
         </div>
