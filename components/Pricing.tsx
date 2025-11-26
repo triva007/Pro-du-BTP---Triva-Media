@@ -40,7 +40,7 @@ const Pricing: React.FC = () => {
                 <div className="flex flex-col items-center justify-center gap-0 mb-4">
                     <div className="relative">
                        <span className="text-lg sm:text-xl text-slate-400 line-through font-bold mb-1 block decoration-slate-300 decoration-2">
-                           1 990 €
+                           2 000 €
                        </span>
                     </div>
                     
