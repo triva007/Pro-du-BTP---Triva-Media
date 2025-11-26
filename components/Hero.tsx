@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ArrowRight, Phone, Star, HardHat, Search, Clock } from 'lucide-react';
+import { ArrowRight, Phone, Search, HardHat, Clock, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [showBadge, setShowBadge] = useState(true);
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
                 Plus de visibilité = plus de clients = <strong>plus de bouche-à-oreille</strong>.
               </p>
               
-              {/* NEW BADGES DESIGN */}
+              {/* BADGE: Hardcoded and Centered for Mobile */}
               <div className="flex justify-center lg:justify-start">
                 <div className="inline-flex items-center gap-2.5 bg-blue-50 border border-blue-100 text-brand-blue px-5 py-2.5 rounded-full shadow-sm transition-transform hover:scale-105 cursor-default">
                   <Clock className="w-5 h-5 text-brand-blue" />
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
                        </div>
                     </div>
                     
-                    {/* Map Placeholder - Cleaner */}
+                    {/* Map Placeholder */}
                     <div className="h-36 bg-slate-100 w-full relative shrink-0 border-y border-slate-100 overflow-hidden">
                        <div className="absolute inset-0 opacity-30 bg-[url('https://www.transparenttextures.com/patterns/map-pattern.png')]"></div>
                        
@@ -175,7 +175,7 @@ const Hero: React.FC = () => {
                  </div>
               </div>
 
-              {/* Floating Notification - Pushed to the side for cleaner look */}
+              {/* Floating Notification */}
               <div className="absolute bottom-24 -right-6 sm:-right-12 bg-white p-3 pr-5 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-30 animate-float-slow hidden sm:block">
                 <div className="flex items-center gap-3">
                    <div className="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30">

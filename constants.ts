@@ -44,7 +44,7 @@ export const NAV_ITEMS: NavigationItem[] = [
 
 // Stats orientées Business Réel
 export const STATS = [
-  { value: "Liberté", label: "Engagement 3 mois seulement" },
+  { value: "Liberté", label: "Zéro Abonnement Mensuel" },
   { value: "France", label: "Une petite équipe française" },
   { value: "24h", label: "Mise en place du projet" },
   { value: "7 Jours", label: "Livraison clé en main" },
@@ -90,8 +90,8 @@ export const FEATURES: Feature[] = [
   },
   {
     icon: RefreshCw,
-    title: "Tout Inclus & Illimité",
-    description: "Maintenance, sécurité, hébergement, modifications de photos ou textes... Tout est géré par nous. Vous avez un département web complet pour le prix d'un resto par mois."
+    title: "Site Livré Clé en Main",
+    description: "Pas de technique à gérer. On vous livre un site terminé, optimisé et prêt à recevoir des clients. Vous êtes propriétaire de votre outil de travail à 100%."
   }
 ];
 
@@ -158,89 +158,56 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    title: "Abonnement Intégral (VIP)",
-    price: "197 €",
-    period: "/ mois",
-    oldPrice: "247 €",
-    description: "L'offre PREMIUM tout-inclus. Ce tarif mensuel avantageux vous donne accès à notre service le plus complet : maintenance, modifications illimitées et support prioritaire.",
-    features: [
-      "🚀 Site Internet Pro (Livré en 7j)",
-      "✅ 0€ de Frais de mise en service",
-      "Positionnement Google & Fiche Maps",
-      "🛡️ Filtre Anti-Mauvais Avis inclus",
-      "Hébergement & Sécurité inclus",
-      "Modifications illimitées",
-      "Support prioritaire WhatsApp"
-    ],
-    bonuses: [
-      {
-        title: "Frais de Mise en Service OFFERTS",
-        description: "Valeur réelle du setup technique et design.",
-        value: "990 €"
-      },
-      {
-        title: "Formation : Maîtriser Google",
-        description: "Tuto vidéo simple.",
-        value: "290 €"
-      }
-    ],
-    isPopular: true,
-    buttonText: "Je profite de l'offre VIP",
-    buttonVariant: "primary"
-  },
-  {
-    title: "Pack Propriétaire",
-    price: "2 490 €",
+    title: "Pack Intégral : Propriétaire à Vie",
+    price: "990 €",
+    oldPrice: "1 990 €",
     period: "Paiement unique",
-    description: "Site livré clé en main. Idéal si vous avez déjà un prestataire technique ou si vous voulez gérer seul.",
+    description: "⚠️ Offre de lancement limitée. Profitez de 1000€ de réduction immédiate pour devenir propriétaire de votre outil de travail.",
     features: [
       "🚀 Site Internet Pro (Livré en 7j)",
-      "✅ Propriétaire à 100% (Code source)",
+      "✅ Propriétaire à 100%",
       "Positionnement Google & Fiche Maps",
       "🛡️ Filtre Anti-Mauvais Avis inclus",
-      "⚠️ Hébergement & Maintenance NON inclus",
-      "⚠️ Option Maintenance VIP (+97€/mois)",
       "Formation prise en main incluse"
     ],
     bonuses: [
       {
-        title: "Formation : Gérer son site",
-        description: "1h de vidéo pour apprendre à modifier vos textes.",
-        value: "290 €"
-      },
-      {
         title: "Optimisation Fiche GMB",
         description: "Paramétrage complet pour le référencement local.",
         value: "490 €"
+      },
+      {
+        title: "Formation : Gérer son site",
+        description: "1h de vidéo pour apprendre à modifier vos textes.",
+        value: "290 €"
       }
     ],
-    isPopular: false,
-    buttonText: "Choisir le Paiement Unique",
-    buttonVariant: "outline"
+    isPopular: true,
+    buttonText: "Bloquer ce tarif (-50%)",
+    buttonVariant: "primary"
   }
 ];
 
 export const COMPARISON_DATA: ComparisonPoint[] = [
-  // Données conservées pour compatibilité type, mais non utilisées dans la nouvelle version visuelle
   { label: "", bad: "", good: "" } 
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "Combien de chantiers pour rentabiliser le site ?",
-    answer: "Faites le calcul : à 197€/mois, souvent une seule petite intervention ou une demi-journée de chantier suffit à payer votre visibilité pour tout le mois. Tout le reste, c'est du bénéfice net pour votre entreprise."
+    question: "Pourquoi ce prix si bas (990€) ?",
+    answer: "C'est une offre de lancement temporaire pour nous faire connaître. Le prix réel du pack est de 1990€. En profitant de l'offre maintenant, vous économisez 1000€ et vous avez exactement la même prestation."
   },
   {
-    question: "Je veux du 'boulot sérieux', pas des bricoles. C'est possible ?",
-    answer: "Oui. Un site pro et des avis 5 étoiles rassurent les clients qui ont du budget. On filtre les 'chasseurs de prix' par l'image haut de gamme que l'on donne de votre entreprise. Vous attirez des clients qui cherchent la qualité avant tout."
+    question: "Est-ce que le site m'appartient vraiment ?",
+    answer: "OUI. C'est la grande différence avec les agences qui vous louent un site. Ici, vous payez une fois, et le site est à vous (code source, images, textes). Vous êtes libre."
   },
   {
     question: "Combien de temps avant que mon téléphone sonne ?",
     answer: "Votre site est livré en 7 jours. Dès qu'il est en ligne et que votre fiche Google est optimisée, vous commencez à remonter. Généralement, nos artisans voient les premiers appels qualifiés arriver dès les premières semaines."
   },
   {
-    question: "Est-ce un contrat bloquant sur 4 ans (Crédit-Bail) ?",
-    answer: "SURTOUT PAS ! C'est le piège classique. Chez nous, l'engagement n'est que de 3 mois. Si ça ne vous rapporte rien, vous arrêtez. Nous sommes obligés de vous apporter des résultats pour vous garder."
+    question: "Dois-je payer un abonnement mensuel ?",
+    answer: "Non. C'est un paiement unique. Vous n'avez pas de mensualité à nous verser. Les seuls frais annuels que vous aurez sont l'hébergement de votre site (environ 50€/an chez un hébergeur) ou notre option maintenance si vous la choisissez."
   },
   {
     question: "J'ai déjà un site mais il ne rapporte rien...",
