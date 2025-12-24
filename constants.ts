@@ -39,7 +39,7 @@ export const NAV_ITEMS: NavigationItem[] = [
   { label: 'Le Constat', href: '#problem' },
   { label: 'La Méthode', href: '#process' },
   { label: 'Réalisations', href: '#portfolio' },
-  { label: 'Tarifs', href: '#pricing' },
+  { label: 'L\'Offre', href: '#pricing' },
 ];
 
 // Stats orientées Business Réel
@@ -158,11 +158,10 @@ export const TESTIMONIALS: Testimonial[] = [
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    title: "Pack Intégral : Propriétaire à Vie",
-    price: "990 €",
-    oldPrice: "1 990 €",
-    period: "Paiement unique",
-    description: "⚠️ Offre de lancement limitée. Profitez de 1000€ de réduction immédiate pour devenir propriétaire de votre outil de travail.",
+    title: "Pack Intégral : Propriétaire",
+    price: "Sur Devis",
+    period: "Offre Ambassadeur",
+    description: "⚠️ Uniquement pour les artisans souhaitant devenir la référence de leur ville. 1 seul artisan par secteur géographique.",
     features: [
       "🚀 Site Internet Pro (Livré en 7j)",
       "✅ Propriétaire à 100%",
@@ -170,32 +169,16 @@ export const PRICING_PLANS: PricingPlan[] = [
       "🛡️ Filtre Anti-Mauvais Avis inclus",
       "Formation prise en main incluse"
     ],
-    bonuses: [
-      {
-        title: "Optimisation Fiche GMB",
-        description: "Paramétrage complet pour le référencement local.",
-        value: "490 €"
-      },
-      {
-        title: "Formation : Gérer son site",
-        description: "1h de vidéo pour apprendre à modifier vos textes.",
-        value: "290 €"
-      }
-    ],
     isPopular: true,
-    buttonText: "Bloquer ce tarif (-50%)",
+    buttonText: "Vérifier la disponibilité",
     buttonVariant: "primary"
   }
 ];
 
-export const COMPARISON_DATA: ComparisonPoint[] = [
-  { label: "", bad: "", good: "" } 
-];
-
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "Pourquoi ce prix si bas (990€) ?",
-    answer: "C'est une offre de lancement temporaire pour nous faire connaître. Le prix réel du pack est de 1990€. En profitant de l'offre maintenant, vous économisez 1000€ et vous avez exactement la même prestation."
+    question: "Quel budget faut-il prévoir ?",
+    answer: "Nous ne fonctionnons pas par abonnement mais par investissement unique. Actuellement, pour nous faire connaître localement, nous offrons une réduction 'Ambassadeur' de -50% sur notre pack tout inclus. Contactez-nous pour vérifier si votre zone est encore disponible et recevoir une étude chiffrée personnalisée."
   },
   {
     question: "Est-ce que le site m'appartient vraiment ?",
@@ -206,12 +189,12 @@ export const FAQ_ITEMS: FaqItem[] = [
     answer: "Votre site est livré en 7 jours. Dès qu'il est en ligne et que votre fiche Google est optimisée, vous commencez à remonter. Généralement, nos artisans voient les premiers appels qualifiés arriver dès les premières semaines."
   },
   {
-    question: "Dois-je payer un abonnement mensuel ?",
-    answer: "Non. C'est un paiement unique. Vous n'avez pas de mensualité à nous verser. Les seuls frais annuels que vous aurez sont l'hébergement de votre site (environ 50€/an chez un hébergeur) ou notre option maintenance si vous la choisissez."
+    question: "Pourquoi limitez-vous à 1 artisan par ville ?",
+    answer: "Par éthique et efficacité. Nous ne pouvons pas promettre la 1ère place sur Google à 10 plombiers de la même ville. Nous choisissons un partenaire sérieux par secteur et nous mettons toute notre énergie pour faire de lui le numéro 1 incontesté."
   },
   {
     question: "J'ai déjà un site mais il ne rapporte rien...",
-    answer: "Avoir un site ne suffit pas, il faut qu'il soit visible. C'est la différence entre une boutique dans une impasse et une boutique sur les Champs-Élysées. Nous transformons votre site 'vitrine vide' en apporteur d'affaires actif grâce au référencement local."
+    answer: "Avoir un site ne suffit pas, il faut qu'il soit visible. C'est la différence entre une boutique dans une impasse et une boutique sur les Champs-Élysées. Nous transformons votre site 'vitrine vide' en apporteur d'affaires actif."
   }
 ];
 
