@@ -25,12 +25,12 @@ export const NAV_ITEMS: NavigationItem[] = [
   { label: "L'Offre", href: '#pricing' },
 ];
 
-// Stats démarqueurs - "Petite équipe", "Pas d'abo", etc.
+// Stats démarqueurs - Avantages concurrentiels forts
 export const STATS = [
-  { value: "100%", label: "Équipe Française" },
+  { value: "7 Jours", label: "Livraison Clé en Main" },
   { value: "0€", label: "D'abonnement mensuel" },
-  { value: "BTP", label: "Spécialisation unique" },
-  { value: "Direct", label: "Ligne WhatsApp Perso" },
+  { value: "100%", label: "Propriétaire du Site" },
+  { value: "France", label: "Une petite équipe française" },
 ];
 
 // Problèmes du quotidien de l'artisan
