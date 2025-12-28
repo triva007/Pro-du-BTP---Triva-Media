@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { FEATURES } from '../constants';
-import { Star, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const Benefits: React.FC = () => {
   return (
@@ -35,8 +35,13 @@ const Benefits: React.FC = () => {
              </div>
              <div className="mt-8 w-full h-40 sm:h-48 bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden relative">
                  <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent z-10"></div>
-                 {/* Image de chantier BTP Réaliste Générale */}
-                 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" alt="Chantier construction" />
+                 <img 
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    width="800"
+                    height="450"
+                    className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" 
+                    alt="Artisan en plein travail sur un chantier de rénovation" 
+                 />
              </div>
           </div>
 
@@ -50,7 +55,6 @@ const Benefits: React.FC = () => {
               <p className="text-slate-400 text-sm sm:text-base">{FEATURES[1].description}</p>
             </div>
             
-            {/* Diagramme simple Avis */}
             <div className="mt-auto bg-slate-800/50 rounded-xl p-3 border border-slate-700/50">
                 <div className="flex items-center gap-2 mb-2">
                     <div className="flex text-brand-yellow"><Star size={10} fill="currentColor"/><Star size={10} fill="currentColor"/><Star size={10} fill="currentColor"/><Star size={10} fill="currentColor"/><Star size={10} fill="currentColor"/></div>

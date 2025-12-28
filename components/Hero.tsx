@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ArrowRight, Phone, Search, HardHat, Clock, Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const [showBadge, setShowBadge] = useState(true);
+  const [showBadge] = useState(true);
 
   return (
     <section className="relative pt-24 pb-12 lg:pt-48 lg:pb-32 overflow-hidden bg-white">
@@ -43,7 +43,6 @@ const Hero: React.FC = () => {
                 Arrêtez de payer des <strong className="text-slate-900">abonnements</strong> pour des sites <strong className="text-slate-900">invisibles</strong>. Nous créons votre <strong className="text-slate-900">machine à chantiers</strong> : <strong className="text-slate-900">100% à vous</strong>, <strong className="text-slate-900">1ère page Google</strong>, et <strong className="text-slate-900">sans frais cachés</strong>.
               </p>
               
-              {/* BADGE: Hardcoded and Centered for Mobile */}
               <div className="flex justify-center lg:justify-start">
                 <div className="inline-flex items-center gap-2.5 bg-blue-50 border border-blue-100 text-brand-blue px-5 py-2.5 rounded-full shadow-sm transition-transform hover:scale-105 cursor-default">
                   <Clock className="w-5 h-5 text-brand-blue" />
@@ -53,31 +52,33 @@ const Hero: React.FC = () => {
             </div>
 
             <div className="flex flex-col items-center lg:items-start gap-3 w-full sm:w-auto">
-              <button onClick={() => document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'})} className="w-full sm:w-auto bg-brand-blue text-white hover:bg-blue-700 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-brand-blue/30 hover:-translate-y-1 active:scale-95">
+              <button 
+                onClick={() => document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'})} 
+                className="w-full sm:w-auto bg-brand-blue text-white hover:bg-blue-700 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-brand-blue/30 hover:-translate-y-1 active:scale-95"
+                aria-label="Voir les tarifs et offres"
+              >
                 Je veux ma 1ère place <ArrowRight size={20} />
               </button>
               
               <div className="flex items-center gap-3 text-sm font-bold text-slate-500 mt-4">
                  <div className="flex -space-x-3">
-                    <img src="https://randomuser.me/api/portraits/men/32.jpg" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt=""/>
-                    <img src="https://randomuser.me/api/portraits/men/44.jpg" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt=""/>
-                    <img src="https://randomuser.me/api/portraits/men/86.jpg" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt=""/>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" width="36" height="36" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt="Artisan satisfait 1"/>
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg" width="36" height="36" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt="Artisan satisfait 2"/>
+                    <img src="https://randomuser.me/api/portraits/men/86.jpg" width="36" height="36" className="w-9 h-9 rounded-full border-2 border-white shadow-sm" alt="Artisan satisfait 3"/>
                  </div>
                  <p>+50 Artisans accompagnés</p>
               </div>
             </div>
           </div>
 
-          {/* Visual Content - CLEANER PHONE DESIGN */}
+          {/* Visual Content */}
           <div className="lg:w-1/2 relative reveal stagger-2 mt-8 lg:mt-0 w-full max-w-[400px] lg:max-w-none mx-auto flex justify-center lg:justify-end">
             <div className="relative w-full max-w-[340px]">
               
               {/* Phone Mockup */}
               <div className="relative z-20 bg-gray-950 rounded-[3rem] p-3 shadow-2xl border-[4px] border-gray-800 ring-1 ring-white/20">
-                 {/* Screen */}
                  <div className="bg-white rounded-[2.25rem] overflow-hidden h-[540px] relative flex flex-col w-full">
                     
-                    {/* Status Bar area (fake) */}
                     <div className="h-6 w-full bg-white flex justify-between items-center px-6 pt-2">
                         <span className="text-[10px] font-bold text-slate-800">9:41</span>
                         <div className="flex gap-1">
@@ -87,7 +88,6 @@ const Hero: React.FC = () => {
                         </div>
                     </div>
 
-                    {/* Clean Search Bar */}
                     <div className="bg-white px-4 pt-2 pb-4 z-10 relative shrink-0">
                        <div className="h-12 bg-white rounded-full w-full flex items-center px-4 shadow-[0_2px_10px_-3px_rgba(0,0,0,0.1)] border border-slate-100 gap-3">
                           <Search className="text-brand-blue w-5 h-5" />
@@ -97,18 +97,15 @@ const Hero: React.FC = () => {
                           <div className="ml-auto w-6 h-6 rounded-full bg-purple-100 text-purple-600 flex items-center justify-center text-[10px] font-bold">A</div>
                        </div>
                        
-                       {/* Filter Chips */}
                        <div className="flex gap-2 mt-3 overflow-hidden">
                           <div className="px-3 py-1.5 bg-brand-dark text-white rounded-lg text-[10px] font-bold shadow-sm">Meilleurs résultats</div>
                           <div className="px-3 py-1.5 bg-slate-50 text-slate-600 rounded-lg text-[10px] font-bold border border-slate-100">Ouvert mtn</div>
                        </div>
                     </div>
                     
-                    {/* Map Placeholder */}
                     <div className="h-36 bg-slate-100 w-full relative shrink-0 border-y border-slate-100 overflow-hidden">
                        <div className="absolute inset-0 opacity-30 bg-[url('https://www.transparenttextures.com/patterns/map-pattern.png')]"></div>
                        
-                       {/* Pins on Map */}
                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center">
                           <div className="bg-brand-blue text-white px-2 py-0.5 rounded shadow-md text-[9px] font-bold mb-1 whitespace-nowrap animate-bounce">C'est vous !</div>
                           <div className="w-8 h-8 bg-brand-blue rounded-full border-[3px] border-white shadow-lg flex items-center justify-center relative">
@@ -116,16 +113,12 @@ const Hero: React.FC = () => {
                           </div>
                        </div>
                        
-                       {/* Competitor Pin */}
                        <div className="absolute top-1/4 right-8 opacity-50 grayscale">
                           <div className="w-4 h-4 bg-red-500 rounded-full border-2 border-white shadow-sm"></div>
                        </div>
                     </div>
 
-                    {/* Result List - High Contrast */}
                     <div className="flex-1 bg-slate-50 p-3 space-y-3 overflow-hidden">
-                       
-                       {/* RESULT 1: THE WINNER (High End Card) */}
                        <div className="bg-white rounded-xl p-4 shadow-lg shadow-brand-blue/5 border border-brand-blue/10 relative z-10">
                           <div className="absolute -left-1 -top-1 w-6 h-6 bg-brand-yellow text-brand-dark font-black flex items-center justify-center rounded-full border-2 border-white shadow-sm z-20 text-xs">1</div>
                           
@@ -155,23 +148,6 @@ const Hero: React.FC = () => {
                              <div className="flex-1 bg-white text-slate-600 py-2 rounded-lg text-center font-bold text-xs border border-slate-200">Site Web</div>
                           </div>
                        </div>
-                       
-                       {/* RESULT 2: THE LOSER (Clean Ghost) */}
-                       <div className="bg-white/50 border border-slate-100 rounded-xl p-3 opacity-50 grayscale scale-[0.98]">
-                          <div className="flex justify-between items-start mb-1">
-                             <h4 className="font-bold text-slate-400 text-xs">Concurrent Invisible</h4>
-                          </div>
-                          <div className="flex items-center gap-1 mb-2">
-                             <div className="flex text-slate-300 gap-0.5">
-                                <Star size={8} fill="currentColor" />
-                                <Star size={8} fill="currentColor" />
-                                <Star size={8} fill="currentColor" />
-                             </div>
-                             <span className="text-slate-300 text-[9px]">(3 avis)</span>
-                          </div>
-                          <div className="h-6 bg-slate-100 rounded w-full"></div>
-                       </div>
-
                     </div>
                  </div>
               </div>
