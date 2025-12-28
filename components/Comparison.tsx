@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Rocket, FileX, BarChart3, Clock } from 'lucide-react';
+import { FileX, BarChart3, Clock } from 'lucide-react';
 
 const Comparison: React.FC = () => {
   return (

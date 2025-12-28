@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { PROBLEM_CARDS } from '../constants';
 
@@ -8,12 +9,11 @@ const Problem: React.FC = () => {
         
         <div className="text-center mb-16 reveal">
           <h2 className="text-3xl sm:text-5xl font-black mb-6">
-            L'Expertise, vous l'avez.<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">Mais est-ce que ça se voit ?</span>
+            Aujourd'hui, le savoir-faire <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">ne suffit plus toujours.</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
-            C'est le problème n°1 des bons artisans : vous bossez dur, vous faites du travail "carré", mais sur Google, vous êtes invisible.
-            Résultat ? C'est le gars qui travaille mal (mais qui parle fort) qui rafle les beaux chantiers. On va remettre l'église au milieu du village.
+            Vous êtes excellent sur le chantier, mais si personne ne le sait, c'est difficile de développer l'entreprise. Voici les 3 obstacles que rencontrent la plupart des artisans.
           </p>
         </div>
 

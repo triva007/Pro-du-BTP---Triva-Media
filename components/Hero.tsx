@@ -29,31 +29,27 @@ const Hero: React.FC = () => {
             )}
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-4 lg:mb-6 tracking-tight">
-              Vous êtes <span className="relative inline-block mx-1">
-                <span className="absolute inset-x-0 bottom-2 h-3 bg-brand-yellow -rotate-2 rounded-sm opacity-80"></span>
-                <span className="relative z-10">le meilleur</span>
-              </span> sur le chantier ?<br/>
-              Soyez le premier sur <span className="text-brand-blue">Google</span>.
+              Vous êtes le meilleur sur le chantier ? <br/>
+              <span className="text-brand-blue">Soyez le premier sur Google.</span>
             </h1>
             
             <div className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium space-y-6">
               <p>
-                Arrêtez de laisser les <span className="font-bold text-slate-800">"bricoleurs"</span> prendre vos chantiers.
-                Plus de visibilité = plus de clients = <strong>plus de bouche-à-oreille</strong>.
+                Arrêtez de payer des abonnements pour des sites invisibles. Nous créons votre machine à chantiers : 100% à vous, 1ère page Google, et sans frais cachés.
               </p>
               
               {/* BADGE: Hardcoded and Centered for Mobile */}
               <div className="flex justify-center lg:justify-start">
                 <div className="inline-flex items-center gap-2.5 bg-blue-50 border border-blue-100 text-brand-blue px-5 py-2.5 rounded-full shadow-sm transition-transform hover:scale-105 cursor-default">
                   <Clock className="w-5 h-5 text-brand-blue" />
-                  <span className="font-bold text-sm sm:text-base tracking-tight">Livré clé en main sous 7 jours</span>
+                  <span className="font-bold text-sm sm:text-base tracking-tight">Système installé en 7 jours</span>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col items-center lg:items-start gap-3 w-full sm:w-auto">
               <button onClick={() => document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'})} className="w-full sm:w-auto bg-brand-blue text-white hover:bg-blue-700 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-brand-blue/30 hover:-translate-y-1 active:scale-95">
-                Je veux ma place de N°1 <ArrowRight size={20} />
+                Je veux ma 1ère place <ArrowRight size={20} />
               </button>
               
               <div className="flex items-center gap-3 text-sm font-bold text-slate-500 mt-4">

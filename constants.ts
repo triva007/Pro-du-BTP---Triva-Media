@@ -2,114 +2,98 @@
 import { 
   MapPin, 
   Smartphone, 
-  TrendingUp, 
   Zap,
-  Search,
   Layout,
-  PhoneCall,
   Clock,
-  ArrowUpRight,
-  XCircle,
-  CheckCircle,
   ShieldCheck,
-  Hammer,
-  HardHat,
-  Ruler,
-  Award,
-  UserX,
-  Filter,
-  Star,
-  Users,
-  Ban,
-  Euro,
-  FileWarning,
-  Monitor,
-  Lock,
-  Megaphone,
   Trophy,
   Gift,
-  CheckCircle2,
-  RefreshCw,
-  Infinity
+  Search,
+  Users,
+  AlertTriangle,
+  Lock,
+  BarChart3,
+  CheckCircle2
 } from 'lucide-react';
-import { Feature, ProcessStep, Project, Testimonial, FaqItem, NavigationItem, PricingPlan, ComparisonPoint, TeamMember } from './types';
+import { Feature, ProcessStep, Project, Testimonial, FaqItem, NavigationItem, PricingPlan, TeamMember } from './types';
 
-// Navigation directe
+// Navigation simple
 export const NAV_ITEMS: NavigationItem[] = [
-  { label: 'Le Constat', href: '#problem' },
-  { label: 'La Méthode', href: '#process' },
+  { label: 'Problème', href: '#problem' },
+  { label: 'Solution', href: '#benefits' },
   { label: 'Réalisations', href: '#portfolio' },
-  { label: 'L\'Offre', href: '#pricing' },
+  { label: 'Tarifs', href: '#pricing' },
 ];
 
-// Stats orientées Business Réel
+// Stats démarqueurs - "Petite équipe", "Pas d'abo", etc.
 export const STATS = [
-  { value: "Liberté", label: "Zéro Abonnement Mensuel" },
-  { value: "France", label: "Une petite équipe française" },
-  { value: "24h", label: "Mise en place du projet" },
-  { value: "7 Jours", label: "Livraison clé en main" },
+  { value: "100%", label: "Équipe Française" },
+  { value: "0€", label: "D'abonnement mensuel" },
+  { value: "BTP", label: "Spécialisation unique" },
+  { value: "Direct", label: "Ligne WhatsApp Perso" },
 ];
 
-// Problèmes basés sur la FIERTÉ et L'INJUSTICE
+// Problèmes du quotidien de l'artisan
 export const PROBLEM_CARDS = [
   {
-    icon: Trophy,
-    title: "Les 'Bricoleurs' vous passent devant",
-    description: "Vous connaissez votre métier sur le bout des doigts. Pourtant, sur Google, c'est souvent un concurrent moins qualifié (ou qui casse les prix) qui sort en premier. C'est injuste, mais ça se corrige.",
+    icon: Users,
+    title: "La concurrence invisible",
+    description: "Vos concurrents sont sur Google. Quand un client cherche un pro dans votre ville, il les trouve eux, pas vous. Même si vous travaillez mieux.",
     color: "bg-orange-50 text-orange-600"
   },
   {
-    icon: ShieldCheck,
-    title: "La peur du 'Client Roi' tyrannique",
-    description: "Une seule étoile injustifiée d'un client de mauvaise foi peut salir 10 ans de réputation. Vous hésitez à demander des avis par peur des représailles. On a la solution pour blinder ça.",
+    icon: AlertTriangle,
+    title: "Le bouche-à-oreille ne suffit plus",
+    description: "Compter uniquement sur les anciens clients, c'est risqué. Il suffit d'un mois creux pour se mettre en danger. Il faut un flux régulier de nouveaux contacts.",
     color: "bg-red-50 text-red-600"
   },
   {
-    icon: Lock,
-    title: "Le Bouche-à-oreille a ses limites",
-    description: "Le bouche-à-oreille est excellent, mais il s'essouffle si on ne remet pas de charbon dans la machine. Notre système injecte de nouveaux clients pour relancer les recommandations.",
+    icon: Search,
+    title: "Des sites qui ne servent à rien",
+    description: "Avoir un site que personne ne visite, c'est comme payer une belle enseigne dans une impasse. Votre site doit être vu pour être utile.",
     color: "bg-slate-100 text-slate-600"
   }
 ];
 
+// Fonctionnalités en langage clair
 export const FEATURES: Feature[] = [
   {
     icon: MapPin,
-    title: "Optimisation Google Maps (GMB)",
-    description: "On travaille votre fiche en profondeur (mots-clés, catégories). On envoie tous les bons signaux à Google pour maximiser vos chances d'apparaître comme la référence locale de votre secteur."
+    title: "1. Être trouvé sur Google",
+    description: "Quand on tape 'Plombier + Votre Ville', vous devez apparaître. On configure votre fiche Google et votre site pour que les clients locaux vous trouvent en premier."
   },
   {
     icon: ShieldCheck,
-    title: "Bouclier de Réputation (Filtre)",
-    description: "Notre système intercepte les avis. Les clients contents sont dirigés vers Google (5 étoiles). Les mécontents sont redirigés vers un formulaire privé. Votre e-réputation reste immaculée."
+    title: "2. Gérer votre réputation",
+    description: "On met en place un système simple pour inciter vos clients satisfaits à laisser 5 étoiles, et pour intercepter les mécontents avant qu'ils ne publient un avis négatif."
   },
   {
-    icon: Layout,
-    title: "Site Web conçu pour Convertir",
-    description: "On ne fait pas du 'joli', on fait du 'rassurant'. Design pro, photos de vos réalisations, boutons d'appel visibles. Le visiteur voit que vous êtes sérieux, il a confiance, il appelle."
+    icon: Smartphone,
+    title: "3. Un site qui inspire confiance",
+    description: "Un design propre, moderne, qui s'affiche bien sur téléphone. On met en avant vos photos de chantiers pour prouver votre savoir-faire immédiatement."
   },
   {
-    icon: RefreshCw,
-    title: "Site Livré Clé en Main",
-    description: "Pas de technique à gérer. On vous livre un site terminé, optimisé et prêt à recevoir des clients. Vous êtes propriétaire de votre outil de travail à 100%."
+    icon: Lock,
+    title: "4. Vous êtes propriétaire",
+    description: "Pas d'abonnement caché, pas de location. Une fois le site payé, il est à vous. Vous avez les clés, le code, et tout le contenu. Liberté totale."
   }
 ];
 
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     number: "1",
-    title: "Construction & Rassurance",
-    description: "On crée votre Site Web Pro et on optimise votre fiche GMB. L'objectif : que tout soit carré pour rassurer immédiatement le client qui tombe sur vous."
+    title: "On discute de votre métier",
+    description: "Un appel simple. Vous nous expliquez ce que vous faites, votre zone d'intervention, et le type de chantiers que vous voulez (plus de dépannage ? plus de rénovation ?)."
   },
   {
     number: "2",
-    title: "Activation du Bouclier",
-    description: "On met en place le système de filtrage d'avis. On commence à solliciter vos anciens clients pour faire grimper votre note Google sans risque."
+    title: "On construit votre vitrine",
+    description: "On rédige les textes, on choisit les photos, on crée le site et on optimise votre fiche Google. Vous n'avez rien à faire, on gère la technique."
   },
   {
     number: "3",
-    title: "Domination Locale",
-    description: "Votre site convertit, votre visibilité locale augmente progressivement, et votre note frôle les 5/5. Vous devenez le choix évident sur votre secteur."
+    title: "Vous recevez les appels",
+    description: "Une fois en ligne, votre entreprise gagne en visibilité. Les clients qui cherchent un pro dans votre secteur tombent sur vous et vous appellent."
   }
 ];
 
@@ -119,82 +103,83 @@ export const PORTFOLIO: Project[] = [
     title: "Toiture & Zinc 33",
     category: "Couvreur Zingueur",
     image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Problème : Un as de la toiture, mais invisible. Résultat : Aujourd'hui, il sort 1er sur sa ville. Il choisit ses chantiers et a arrêté de courir après les clients."
+    description: "Avant : Invisible sur internet. Après : 1ère page Google sur sa ville. Résultat : +3 chantiers complets par mois."
   },
   {
     id: 2,
     title: "Elec' Confort",
-    category: "Électricien Général",
+    category: "Électricien",
     image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Problème : Se faisait avoir par des apporteurs d'affaires. Résultat : Son propre site lui ramène 15 appels par mois. Il a rentabilisé son investissement en 2 chantiers."
+    description: "Avant : Trop dépendant des pages jaunes. Après : Un site moderne qui lui appartient. Il ne paie plus d'abonnement mensuel."
   },
   {
     id: 3,
-    title: "Rénov' Habitat Global",
-    category: "Rénovation Générale",
+    title: "Rénov' Habitat",
+    category: "Maçonnerie",
     image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-    description: "Problème : Peur panique des faux avis. Résultat : Avec notre filtre, il est monté à 4.9/5. Les clients signent les devis plus vite car ils ont confiance."
+    description: "Avant : Quelques mauvais avis injustifiés. Après : Mise en place de notre système de gestion d'avis. Note remontée à 4.8/5."
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: "Marc D.",
-    role: "Artisan Menuisier",
-    company: "MD Menuiserie",
+    name: "Cédric M.",
+    role: "Menuisier",
+    company: "Menuiserie du Sud",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
-    quote: "Je n'y connais rien en informatique et je m'en fous. Moi je veux juste que le téléphone sonne pour du boulot sérieux. C'est ce qu'ils ont fait. C'est carré."
+    quote: "J'y connais rien en informatique. Ils se sont occupés de tout. Aujourd'hui quand on tape menuisier dans ma ville, je sors en premier. C'est tout ce que je voulais."
   },
   {
     id: 2,
-    name: "Karim B.",
-    role: "Façadier",
-    company: "KB Ravalement",
+    name: "Pascal B.",
+    role: "Plombier",
+    company: "PB Services",
     avatar: "https://randomuser.me/api/portraits/men/44.jpg",
-    quote: "J'étais invisible sur Google, relégué en page 2. Ils ont repris ma fiche GMB en main et en 2 mois, je suis remonté dans le Top 3 local. Le téléphone a recommencé à sonner."
+    quote: "J'en avais marre de payer des abonnements tous les mois pour un site qui ne m'appartenait pas. Là, j'ai payé une fois, le site est à moi, et il est bien plus beau."
   }
 ];
 
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    title: "Pack Intégral : Propriétaire",
+    title: "Pack Visibilité Artisan",
     price: "Sur Devis",
-    period: "Offre Ambassadeur",
-    description: "⚠️ Uniquement pour les artisans souhaitant devenir la référence de leur ville. 1 seul artisan par secteur géographique.",
+    period: "Paiement en 1 fois",
+    description: "Tout ce qu'il faut pour être visible et crédible dans votre ville. Sans frais cachés, sans abonnement mensuel.",
     features: [
-      "🚀 Site Internet Pro (Livré en 7j)",
-      "✅ Propriétaire à 100%",
-      "Positionnement Google & Fiche Maps",
-      "🛡️ Filtre Anti-Mauvais Avis inclus",
-      "Formation prise en main incluse"
+      "Création du Site Internet complet",
+      "Optimisation fiche Google (pour la carte)",
+      "Rédaction des textes professionnels",
+      "Sécurisation du site (Cadenas HTTPS)",
+      "Le site vous appartient à 100%",
+      "Formation pour modifier vos photos"
     ],
     isPopular: true,
-    buttonText: "Vérifier la disponibilité",
+    buttonText: "Demander mon devis gratuit",
     buttonVariant: "primary"
   }
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
   {
-    question: "Quel budget faut-il prévoir ?",
-    answer: "Nous ne fonctionnons pas par abonnement mais par investissement unique. Actuellement, pour nous faire connaître localement, nous offrons une réduction 'Ambassadeur' de -50% sur notre pack tout inclus. Contactez-nous pour vérifier si votre zone est encore disponible et recevoir une étude chiffrée personnalisée."
+    question: "Combien ça coûte ?",
+    answer: "Contrairement aux agences qui vous facturent 200€ par mois pendant 4 ans (soit 10 000€ !), nous fonctionnons au forfait unique. Vous payez la création une seule fois. Contactez-nous pour un devis adapté à votre métier."
   },
   {
-    question: "Est-ce que le site m'appartient vraiment ?",
-    answer: "OUI. C'est la grande différence avec les agences qui vous louent un site. Ici, vous payez une fois, et le site est à vous (code source, images, textes). Vous êtes libre."
+    question: "Est-ce que je suis propriétaire du site ?",
+    answer: "OUI. C'est le point le plus important. Une fois le site livré, il est à vous. Vous ne nous devez plus rien."
   },
   {
-    question: "Combien de temps avant que mon téléphone sonne ?",
-    answer: "Votre site est livré en 7 jours. Dès qu'il est en ligne et que votre fiche Google est optimisée, vous commencez à remonter. Généralement, nos artisans voient les premiers appels qualifiés arriver dès les premières semaines."
+    question: "Je n'ai pas le temps de m'en occuper...",
+    answer: "Ça tombe bien, c'est notre travail. On s'occupe de la technique, des textes, de la mise en ligne. Vous avez juste à répondre au téléphone quand les clients appellent."
   },
   {
-    question: "Pourquoi limitez-vous à 1 artisan par ville ?",
-    answer: "Par éthique et efficacité. Nous ne pouvons pas promettre la 1ère place sur Google à 10 plombiers de la même ville. Nous choisissons un partenaire sérieux par secteur et nous mettons toute notre énergie pour faire de lui le numéro 1 incontesté."
+    question: "Combien de temps ça prend ?",
+    answer: "En général, une fois qu'on a discuté de vos besoins, votre site est en ligne sous 7 à 10 jours."
   },
   {
-    question: "J'ai déjà un site mais il ne rapporte rien...",
-    answer: "Avoir un site ne suffit pas, il faut qu'il soit visible. C'est la différence entre une boutique dans une impasse et une boutique sur les Champs-Élysées. Nous transformons votre site 'vitrine vide' en apporteur d'affaires actif."
+    question: "J'ai déjà un site mais il est vieux...",
+    answer: "On peut le refaire complètement. On garde votre nom de domaine (l'adresse .fr ou .com) mais on modernise tout le design pour qu'il inspire confiance aux clients d'aujourd'hui."
   }
 ];
 
@@ -202,19 +187,19 @@ export const TEAM: TeamMember[] = [
   {
     id: 1,
     name: "Alexandre",
-    role: "Stratège BTP",
+    role: "Conseiller Pro",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
   },
   {
     id: 2,
     name: "Sarah",
-    role: "Design & Conversion",
+    role: "Création Web",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
   },
   {
     id: 3,
     name: "David",
-    role: "Expert Google Maps",
+    role: "Expert Google",
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
   }
 ];
