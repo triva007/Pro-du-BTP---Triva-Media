@@ -29,13 +29,18 @@ const Hero: React.FC = () => {
             )}
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-4 lg:mb-6 tracking-tight">
-              Vous êtes le meilleur sur le chantier ? <br/>
+              Vous êtes le{' '}
+              <span className="relative inline-block">
+                <span className="absolute inset-x-0 bottom-1 sm:bottom-3 h-3 sm:h-5 bg-brand-yellow -rotate-1 transform -z-10 rounded-sm"></span>
+                <span className="relative z-10">meilleur</span>
+              </span>
+              {' '}sur le chantier ? <br/>
               <span className="text-brand-blue">Soyez le premier sur Google.</span>
             </h1>
             
             <div className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium space-y-6">
               <p>
-                Arrêtez de payer des abonnements pour des sites invisibles. Nous créons votre machine à chantiers : 100% à vous, 1ère page Google, et sans frais cachés.
+                Arrêtez de payer des <strong className="text-slate-900">abonnements</strong> pour des sites <strong className="text-slate-900">invisibles</strong>. Nous créons votre <strong className="text-brand-blue">machine à chantiers</strong> : <strong className="text-slate-900">100% à vous</strong>, <strong className="text-slate-900">1ère page Google</strong>, et <strong className="text-slate-900">sans frais cachés</strong>.
               </p>
               
               {/* BADGE: Hardcoded and Centered for Mobile */}

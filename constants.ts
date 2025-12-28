@@ -22,7 +22,7 @@ export const NAV_ITEMS: NavigationItem[] = [
   { label: 'Problème', href: '#problem' },
   { label: 'Solution', href: '#benefits' },
   { label: 'Réalisations', href: '#portfolio' },
-  { label: 'Tarifs', href: '#pricing' },
+  { label: "L'Offre", href: '#pricing' },
 ];
 
 // Stats démarqueurs - "Petite équipe", "Pas d'abo", etc.
