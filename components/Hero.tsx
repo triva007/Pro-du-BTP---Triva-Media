@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
             
             <div className="text-base sm:text-lg text-slate-600 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium space-y-6">
               <p>
-                Arrêtez de payer des <strong className="text-slate-900">abonnements</strong> pour des sites <strong className="text-slate-900">invisibles</strong>. Nous créons votre <strong className="text-brand-blue">machine à chantiers</strong> : <strong className="text-slate-900">100% à vous</strong>, <strong className="text-slate-900">1ère page Google</strong>, et <strong className="text-slate-900">sans frais cachés</strong>.
+                Arrêtez de payer des <strong className="text-slate-900">abonnements</strong> pour des sites <strong className="text-slate-900">invisibles</strong>. Nous créons votre <strong className="text-slate-900">machine à chantiers</strong> : <strong className="text-slate-900">100% à vous</strong>, <strong className="text-slate-900">1ère page Google</strong>, et <strong className="text-slate-900">sans frais cachés</strong>.
               </p>
               
               {/* BADGE: Hardcoded and Centered for Mobile */}
