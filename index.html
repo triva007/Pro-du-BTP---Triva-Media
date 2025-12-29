@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr-FR" class="scroll-smooth scroll-pt-32">
   <head>
+    <!-- Script de secours : Redirection forcée vers la version sans WWW pour éviter l'erreur de certificat SSL -->
+    <script>
+      if (window.location.hostname === 'www.btp.triva-media.com') {
+        window.location.replace('https://btp.triva-media.com' + window.location.pathname + window.location.search);
+      }
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
