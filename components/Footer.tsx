@@ -15,20 +15,22 @@ const Footer: React.FC = () => {
              </h2>
              <p className="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">Discutons de votre projet. Audit gratuit de votre présence en ligne actuelle.</p>
              <div className="flex flex-col sm:flex-row justify-center gap-4">
-                <button 
-                  onClick={() => window.location.href = 'mailto:aaron@triva-media.com'}
-                  className="bg-white text-brand-blue hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl"
+                <a 
+                  href="mailto:aaron@triva-media.com"
+                  className="bg-white text-brand-blue hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl hover:-translate-y-1 active:scale-95"
                   aria-label="Envoyer un email à Aaron"
                 >
                   Nous contacter par mail <ArrowRight size={20} />
-                </button>
-                <button 
-                  onClick={() => window.open('https://wa.me/33767056066', '_blank')}
-                  className="bg-brand-dark hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all border border-white/10"
+                </a>
+                <a 
+                  href="https://wa.me/33767056066"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-brand-dark hover:bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center justify-center gap-2 transition-all border border-white/10 hover:-translate-y-1 active:scale-95"
                   aria-label="Contacter l'agence via WhatsApp"
                 >
                   <MessageCircle size={20} /> Sur Whatsapp
-                </button>
+                </a>
              </div>
           </div>
           
@@ -53,7 +55,7 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 text-sm font-bold text-slate-500">
-              <a href="#process" className="hover:text-brand-blue transition-colors">Notre approche</a>
+              <a href="#problem" className="hover:text-brand-blue transition-colors">Notre approche</a>
               <a href="#portfolio" className="hover:text-brand-blue transition-colors">Portfolio</a>
               <a href="#faq" className="hover:text-brand-blue transition-colors">FAQ</a>
             </div>

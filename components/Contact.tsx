@@ -35,7 +35,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-1">Appelez-nous</h3>
-                  <p className="text-brand-lightBlue">+33 7 67 05 60 66</p>
+                  <a href="tel:+33767056066" className="text-brand-lightBlue hover:text-white transition-colors text-lg font-medium">+33 7 67 05 60 66</a>
                   <p className="text-sm text-white/50 mt-1">On parle le langage du chantier.</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-xl mb-1">Par email</h3>
-                  <p className="text-brand-lightBlue">aaron@triva-media.com</p>
+                  <a href="mailto:aaron@triva-media.com" className="text-brand-lightBlue hover:text-white transition-colors text-lg font-medium decoration-brand-yellow/30 underline-offset-4 hover:underline">aaron@triva-media.com</a>
                   <p className="text-sm text-white/50 mt-1">Réponse rapide.</p>
                 </div>
               </div>
@@ -56,13 +56,26 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="reveal delay-200 bg-white rounded-3xl p-8 sm:p-10 shadow-2xl shadow-black/20">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Étude de Potentiel Gratuite</h3>
-            <form className="space-y-5" onSubmit={(e) => e.preventDefault()}>
+            
+            <form 
+              className="space-y-5" 
+              action="https://formsubmit.co/aaron@triva-media.com" 
+              method="POST"
+            >
+              {/* Configuration FormSubmit */}
+              <input type="hidden" name="_subject" value="🚀 Nouveau prospect via le site web !" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_next" value="https://btp.triva-media.com" />
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="space-y-1">
                   <label htmlFor="name" className="block text-sm font-semibold text-slate-700 ml-1">Nom / Entreprise</label>
                   <input 
                     type="text" 
-                    id="name" 
+                    id="name"
+                    name="nom" 
+                    required
                     className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all focus:bg-white"
                     placeholder="Ex: SARL Martin"
                   />
@@ -71,7 +84,9 @@ const Contact: React.FC = () => {
                   <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 ml-1">Téléphone</label>
                   <input 
                     type="tel" 
-                    id="phone" 
+                    id="phone"
+                    name="telephone"
+                    required 
                     className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all focus:bg-white"
                     placeholder="06 ..."
                   />
@@ -82,7 +97,8 @@ const Contact: React.FC = () => {
                 <label htmlFor="activity" className="block text-sm font-semibold text-slate-700 ml-1">Votre Métier</label>
                 <input 
                   type="text" 
-                  id="activity" 
+                  id="activity"
+                  name="activite" 
                   className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all focus:bg-white"
                   placeholder="Couvreur, Plombier, Piscine..."
                 />
@@ -91,7 +107,8 @@ const Contact: React.FC = () => {
               <div className="space-y-1">
                 <label htmlFor="message" className="block text-sm font-semibold text-slate-700 ml-1">Votre situation actuelle</label>
                 <textarea 
-                  id="message" 
+                  id="message"
+                  name="message" 
                   rows={4} 
                   className="w-full px-5 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-brand-blue focus:border-transparent outline-none transition-all focus:bg-white resize-none"
                   placeholder="Je n'ai pas de site, ou je veux moderniser mon site actuel..."
@@ -100,6 +117,7 @@ const Contact: React.FC = () => {
 
               <Button 
                 variant="primary" 
+                type="submit"
                 className="w-full text-lg py-4 mt-2 group"
               >
                 Recevoir mon audit gratuit
