@@ -16,6 +16,10 @@ const Team: React.FC = () => {
                 <img 
                   src={member.image} 
                   alt={member.name} 
+                  loading="lazy"
+                  decoding="async"
+                  width="128"
+                  height="128"
                   className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover border-4 border-white shadow-md"
                 />
                 <div className="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>

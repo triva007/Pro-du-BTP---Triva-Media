@@ -25,7 +25,9 @@ const Portfolio: React.FC = () => {
             >
               <img 
                 src={project.image} 
-                alt={project.title} 
+                alt={project.title}
+                loading="lazy"
+                decoding="async" 
                 className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-500"
               />
               

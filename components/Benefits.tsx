@@ -39,6 +39,8 @@ const Benefits: React.FC = () => {
                     src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                     width="800"
                     height="450"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" 
                     alt="Artisan en plein travail sur un chantier de rénovation" 
                  />

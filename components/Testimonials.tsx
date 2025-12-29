@@ -20,7 +20,11 @@ const Testimonials: React.FC = () => {
               <div className="flex items-center gap-4 mb-6">
                 <img 
                   src={testimonial.avatar} 
-                  alt={testimonial.name} 
+                  alt={testimonial.name}
+                  loading="lazy"
+                  decoding="async"
+                  width="48"
+                  height="48"
                   className="w-12 h-12 rounded-full object-cover border border-slate-200"
                 />
                 <div>

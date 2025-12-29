@@ -1,16 +1,18 @@
-
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Problem from './components/Problem';
-import Stats from './components/Stats';
-import Benefits from './components/Benefits';
-import Process from './components/Process';
-import Pricing from './components/Pricing';
-import Testimonials from './components/Testimonials';
-import Comparison from './components/Comparison';
-import FAQ from './components/FAQ';
-import Footer from './components/Footer';
+
+// Lazy Load des composants non visibles immédiatement pour accélérer le FCP (First Contentful Paint)
+const Problem = React.lazy(() => import('./components/Problem'));
+const Stats = React.lazy(() => import('./components/Stats'));
+const Benefits = React.lazy(() => import('./components/Benefits'));
+const Process = React.lazy(() => import('./components/Process'));
+const Pricing = React.lazy(() => import('./components/Pricing'));
+const Testimonials = React.lazy(() => import('./components/Testimonials'));
+const Comparison = React.lazy(() => import('./components/Comparison'));
+const FAQ = React.lazy(() => import('./components/FAQ'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const Contact = React.lazy(() => import('./components/Contact'));
 
 const App: React.FC = () => {
   
@@ -23,8 +25,11 @@ const App: React.FC = () => {
       });
     }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
 
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach(el => observer.observe(el));
+    // Petit délai pour laisser le DOM se construire après le lazy loading
+    setTimeout(() => {
+        const elements = document.querySelectorAll('.reveal');
+        elements.forEach(el => observer.observe(el));
+    }, 500);
 
     return () => observer.disconnect();
   }, []);
@@ -34,18 +39,25 @@ const App: React.FC = () => {
       <Header />
       <main>
         <Hero />
-        <Stats />
-        <Problem />
-        <Benefits />
-        <Process />
-        <Comparison />
-        <Pricing />
-        <Testimonials />
-        <FAQ />
+        {/* Suspense fallback vide pour éviter le layout shift ou loading spinners intrusifs */}
+        <Suspense fallback={<div className="h-20" />}>
+          <Stats />
+          <Problem />
+          <Benefits />
+          <Process />
+          <Comparison />
+          <Pricing />
+          <Contact /> 
+          <Testimonials />
+          <FAQ />
+        </Suspense>
       </main>
-      <Footer />
+      
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
 
-      {/* Floating WhatsApp Button - Premium Glassmorphism Style */}
+      {/* Floating WhatsApp Button */}
       <a 
         href="https://wa.me/33767056066"
         target="_blank"
