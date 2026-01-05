@@ -57,10 +57,10 @@ const Header: React.FC = () => {
             {/* Texte Logo */}
             <div className="flex flex-col justify-center">
               <span className={`text-xl font-black tracking-tight leading-none ${scrolled ? 'text-slate-900' : 'text-slate-900'}`}>
-                Triva<span className="text-brand-blue">.</span>Media
+                Triva Media <span className="text-brand-blue">BTP</span>
               </span>
               <span className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-slate-400 leading-none mt-1 group-hover:text-brand-blue transition-colors">
-                Agence Locale
+                Expert Digital Bâtiment
               </span>
             </div>
           </div>

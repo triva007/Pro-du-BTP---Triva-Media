@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Instagram, Linkedin, ArrowRight, MessageCircle } from 'lucide-react';
 
@@ -46,12 +45,12 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             
             <div className="flex items-center gap-2">
-              <span className="text-xl font-black text-brand-dark">Triva<span className="text-brand-blue">-</span>Media</span>
+              <span className="text-xl font-black text-brand-dark">Triva Media <span className="text-brand-blue">BTP</span></span>
             </div>
 
             <div className="flex gap-6">
-               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-blue transition-colors bg-slate-50 p-2 rounded-full" aria-label="Suivre Triva-Media sur Instagram"><Instagram size={20} /></a>
-               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-blue transition-colors bg-slate-50 p-2 rounded-full" aria-label="Suivre Triva-Media sur LinkedIn"><Linkedin size={20} /></a>
+               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-blue transition-colors bg-slate-50 p-2 rounded-full" aria-label="Suivre Triva Media BTP sur Instagram"><Instagram size={20} /></a>
+               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-brand-blue transition-colors bg-slate-50 p-2 rounded-full" aria-label="Suivre Triva Media BTP sur LinkedIn"><Linkedin size={20} /></a>
             </div>
 
             <div className="flex flex-wrap justify-center gap-6 text-sm font-bold text-slate-500">
@@ -63,7 +62,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="mt-12 pt-8 border-t border-slate-50 text-center text-xs text-slate-400 font-medium">
-             © {new Date().getFullYear()} Triva-Media Agency. Tous droits réservés. <a href="/mentions-legales" className="underline hover:text-brand-blue">Mentions légales</a>.
+             © {new Date().getFullYear()} Triva Media BTP. Tous droits réservés. <a href="/mentions-legales" className="underline hover:text-brand-blue">Mentions légales</a>.
           </div>
         </div>
       </div>
