@@ -102,21 +102,21 @@ export const PORTFOLIO: Project[] = [
     id: 1,
     title: "Toiture & Zinc 33",
     category: "Couvreur Zingueur",
-    image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1632759145351-1d592919f522?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=75&fm=webp",
     description: "Avant : Invisible sur internet. Après : 1ère page Google sur sa ville. Résultat : +3 chantiers complets par mois."
   },
   {
     id: 2,
     title: "Elec' Confort",
     category: "Électricien",
-    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=75&fm=webp",
     description: "Avant : Trop dépendant des pages jaunes. Après : Un site moderne qui lui appartient. Il ne paie plus d'abonnement mensuel."
   },
   {
     id: 3,
     title: "Rénov' Habitat",
     category: "Maçonnerie",
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=75&fm=webp",
     description: "Avant : Quelques mauvais avis injustifiés. Après : Mise en place de notre système de gestion d'avis. Note remontée à 4.8/5."
   }
 ];
@@ -188,18 +188,18 @@ export const TEAM: TeamMember[] = [
     id: 1,
     name: "Alexandre",
     role: "Conseiller Pro",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=75&fm=webp"
   },
   {
     id: 2,
     name: "Sarah",
     role: "Création Web",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80"
+    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=75&fm=webp"
   },
   {
     id: 3,
     name: "David",
     role: "Expert Google",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=75&fm=webp"
   }
 ];

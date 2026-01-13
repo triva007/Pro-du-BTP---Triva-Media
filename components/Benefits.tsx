@@ -13,7 +13,7 @@ const Benefits: React.FC = () => {
             Tout ce qu'il faut pour <br/>
             <span className="text-brand-blue">trouver des chantiers.</span>
           </h2>
-          <p className="text-slate-500 text-lg max-w-2xl">
+          <p className="text-slate-500 text-lg max-w-2xl mx-auto">
             Pas de fonctionnalités inutiles. Juste les outils essentiels pour rassurer vos futurs clients et les inciter à vous appeler.
           </p>
         </div>
@@ -36,7 +36,7 @@ const Benefits: React.FC = () => {
              <div className="mt-8 w-full h-40 sm:h-48 bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden relative">
                  <div className="absolute inset-0 bg-gradient-to-t from-white/50 to-transparent z-10"></div>
                  <img 
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=75&fm=webp" 
                     width="800"
                     height="450"
                     loading="lazy"
