@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           <div className="lg:w-1/2 text-center lg:text-left reveal">
             
             {showBadge && (
-              <div className="inline-flex items-center gap-2 bg-brand-blue/10 border border-brand-blue/20 rounded-full pl-4 pr-4 py-1.5 mb-8 lg:mb-10 animate-fade-in-up mx-auto lg:mx-0 group transition-all cursor-default">
+              <div className="inline-flex items-center gap-2 bg-brand-blue/10 border border-brand-blue/20 rounded-full pl-4 pr-4 py-1.5 mb-10 lg:mb-12 animate-fade-in-up mx-auto lg:mx-0 group transition-all cursor-default">
                 <span className="flex h-2 w-2 relative">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-blue opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-blue"></span>
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
               </div>
             )}
 
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-8 lg:mb-10 tracking-tight">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] mb-10 lg:mb-12 tracking-tight">
               Vous êtes le{' '}
               <span className="relative inline-block">
                 <span className="absolute inset-x-0 bottom-1 sm:bottom-3 h-3 sm:h-5 bg-brand-yellow -rotate-1 transform -z-10 rounded-sm"></span>
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
               <span className="text-brand-blue">Soyez le premier sur Google.</span>
             </h1>
             
-            <div className="text-base sm:text-lg text-slate-600 mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium space-y-6">
+            <div className="text-base sm:text-lg text-slate-600 mb-14 leading-relaxed max-w-xl mx-auto lg:mx-0 font-medium space-y-6">
               <p>
                 Arrêtez de payer des <strong className="text-slate-900">abonnements</strong> pour des sites <strong className="text-slate-900">invisibles</strong>. Nous créons votre <strong className="text-slate-900">machine à chantiers</strong> : <strong className="text-slate-900">100% à vous</strong>, <strong className="text-slate-900">1ère page Google</strong>, et <strong className="text-slate-900">sans frais cachés</strong>.
               </p>
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
               {/* Phone Container */}
               <div className="relative z-20 bg-slate-900 rounded-[2.5rem] p-2 shadow-2xl shadow-slate-900/40 border-[4px] border-slate-800 ring-1 ring-white/10">
                  
-                 {/* Screen Area - Reduced Height from 560px to 480px */}
+                 {/* Screen Area */}
                  <div className="bg-white rounded-[2rem] overflow-hidden h-[480px] relative flex flex-col w-full">
                     
                     {/* Notch / Minimalist Header */}
@@ -92,9 +92,8 @@ const Hero: React.FC = () => {
                        </div>
                     </div>
                     
-                    {/* Map Area - Top 35% */}
+                    {/* Map Area */}
                     <div className="h-[35%] bg-slate-100 w-full relative overflow-hidden shrink-0">
-                       {/* Map Pattern */}
                        <div className="absolute inset-0 opacity-40 bg-[url('https://www.transparenttextures.com/patterns/map-pattern.png')] bg-cover"></div>
                        
                        {/* The Pin (You) */}
@@ -106,19 +105,13 @@ const Hero: React.FC = () => {
                               <div className="w-4 h-4 bg-brand-blue rounded-full border-2 border-white shadow-lg"></div>
                           </div>
                        </div>
-                       
-                       {/* Competitor pins */}
-                       <div className="absolute top-[30%] right-8 w-2 h-2 bg-slate-300 rounded-full border border-white shadow-sm"></div>
-                       <div className="absolute top-[60%] left-6 w-2 h-2 bg-slate-300 rounded-full border border-white shadow-sm"></div>
                     </div>
 
-                    {/* List Area - Bottom 65% - Pull Up Drawer Effect */}
+                    {/* List Area */}
                     <div className="flex-1 bg-white relative -mt-4 rounded-t-3xl shadow-[0_-4px_20px_-5px_rgba(0,0,0,0.1)] z-20 px-3 pt-3 pb-4 overflow-hidden flex flex-col">
-                        
-                        {/* Drag Handle */}
                         <div className="w-10 h-1 bg-slate-200 rounded-full mx-auto mb-4"></div>
 
-                        {/* Card 1: Your Company (Highlighted) */}
+                        {/* Card 1: Your Company */}
                         <div className="bg-white rounded-xl p-3 shadow-[0_2px_15px_-3px_rgba(0,85,255,0.15)] border border-brand-blue/10 relative mb-3 group cursor-pointer">
                             <div className="absolute -left-1 -top-2 w-6 h-6 bg-brand-yellow text-slate-900 font-black flex items-center justify-center rounded-lg shadow-sm border-2 border-white transform -rotate-6 z-20 text-xs">
                                 1
@@ -149,7 +142,7 @@ const Hero: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* Card 2: Competitors (Generic) */}
+                        {/* Card 2: Competitors */}
                         <div className="bg-slate-50/50 rounded-xl p-3 border border-slate-100 relative grayscale opacity-70 mb-2">
                              <div className="absolute -left-1 -top-2 w-5 h-5 bg-slate-200 text-slate-500 font-bold flex items-center justify-center rounded-lg shadow-sm border border-white z-20 text-[10px]">
                                 2
@@ -157,29 +150,15 @@ const Hero: React.FC = () => {
                             <div className="flex justify-between items-start pl-3 mb-1">
                                 <div>
                                     <h3 className="font-bold text-slate-500 text-xs uppercase leading-tight">VOS CONCURRENTS</h3>
-                                    <div className="flex items-center gap-1 mt-1">
-                                        <div className="flex text-slate-300">
-                                            <Star size={9} fill="currentColor" />
-                                            <Star size={9} fill="currentColor" />
-                                            <Star size={9} fill="currentColor" />
-                                            <Star size={9} fill="currentColor" />
-                                            <Star size={9} />
-                                        </div>
-                                        <span className="text-slate-400 text-[9px]">(12 avis)</span>
-                                    </div>
                                 </div>
                             </div>
-                            <div className="mt-2 text-[9px] text-slate-400 font-medium pl-3 italic">
-                                Pas de site web • Difficile à trouver
-                            </div>
                         </div>
-
                     </div>
                  </div>
               </div>
 
-              {/* Floating Notification - Hidden on Mobile */}
-              <div className="hidden lg:flex absolute bottom-40 left-1/2 -translate-x-1/2 lg:-left-12 lg:bottom-48 bg-white p-3 pr-5 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-slate-100 z-30 animate-float-slow items-center gap-3 w-max">
+              {/* Floating Notification - Positioned exactly as requested (vertically centered on left side) */}
+              <div className="hidden lg:flex absolute top-[42%] -left-48 bg-white p-3 pr-5 rounded-xl shadow-[0_15px_50px_-10px_rgba(0,0,0,0.15)] border border-slate-100 z-30 animate-float-slow items-center gap-3 w-max whitespace-nowrap">
                 <div className="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center text-white shadow-lg shadow-green-500/30">
                      <Phone size={18} fill="currentColor" />
                 </div>
