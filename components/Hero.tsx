@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ArrowRight, Phone, Search, HardHat, CheckCircle2, Star, MapPin } from 'lucide-react';
+import { ArrowRight, Phone, Search, HardHat, CheckCircle2, Star, MapPin, Clock } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const [showBadge] = useState(true);
@@ -48,11 +48,16 @@ const Hero: React.FC = () => {
             <div className="flex flex-col items-center lg:items-start w-full sm:w-auto">
               <button 
                 onClick={() => document.getElementById('pricing')?.scrollIntoView({behavior: 'smooth'})} 
-                className="w-full sm:w-auto bg-brand-blue text-white hover:bg-blue-700 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-brand-blue/30 hover:-translate-y-1 active:scale-95"
+                className="w-full sm:w-auto bg-brand-blue text-white hover:bg-blue-700 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-xl shadow-brand-blue/30 hover:-translate-y-1 active:scale-95 mb-8"
                 aria-label="Voir les tarifs et offres"
               >
                 Je veux ma 1ère place <ArrowRight size={20} />
               </button>
+
+              <div className="inline-flex items-center gap-2.5 bg-blue-50 border border-blue-100 text-brand-blue px-5 py-2.5 rounded-full font-bold text-sm transition-transform hover:scale-105 cursor-default shadow-sm">
+                <Clock size={18} strokeWidth={2.5} />
+                <span>Système installé en 7 jours</span>
+              </div>
             </div>
           </div>
 
